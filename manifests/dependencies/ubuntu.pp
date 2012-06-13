@@ -14,8 +14,8 @@ class rvm::dependencies::ubuntu {
   if ! defined(Package['libsqlite3-0'])         { package { 'libsqlite3-0':         ensure => installed } }
   if ! defined(Package['libsqlite3-dev'])       { package { 'libsqlite3-dev':       ensure => installed } }
   if ! defined(Package['sqlite3'])              { package { 'sqlite3':              ensure => installed } }
-  if ! defined(Package['libxml2-dev'])          { package { 'libxml2-dev':          ensure => installed } }
-  if ! defined(Package['libxslt1-dev'])         { package { 'libxslt1-dev':         ensure => installed, alias => 'libxslt-dev' } }
+  #if ! defined(Package['libxml2-dev'])          { package { 'libxml2-dev':          ensure => installed } }
+  #if ! defined(Package['libxslt1-dev'])         { package { 'libxslt1-dev':         ensure => installed, alias => 'libxslt-dev' } }
   if ! defined(Package['autoconf'])             { package { 'autoconf':             ensure => installed } }
   if ! defined(Package['libc6-dev'])            { package { 'libc6-dev':            ensure => installed } }
 
